@@ -1,0 +1,90 @@
+
+.boxModel{
+    display: grid;
+    gap: 40px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-items: stretch;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+
+    border: 1px solid #DCDCDC;
+    padding: 30px;
+    border-radius: 40px;
+    background-color: white;
+
+    aspect-ratio: 1.1/1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+
+}
+.cards:hover{
+    background-color: #ED0231;
+    color: white;
+    border-color: #ED0231;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5px) scale(1.03);
+}
+.cards p, .cards div{
+    margin: 0;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+button{
+    background-color: white;
+    border: 2px solid #ED0231;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 16px;
+}
+button.learn{
+    color: white;
+    background-color: #ED0231;
+}
+.cards:hover button{
+    background-color: #ED0231;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+}
+.cards:hover button.learn{
+    color: #ED0231;
+    background-color: white;
+}
+img{
+    width: 60px;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    margin-bottom: 10px;
+}
+
+.duration{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.college, .mainTopic, .duration, .date, button{
+    font-family: 'Outfit';
+}
+.mainTopic{  
+    font-size: 26px;
+    font-weight: 600;
+}
+.college{
+    font-size: 14px;
+    color: #696969;
+    font-weight: 600;
+}
+.cards:hover .college{
+    color: white;
+}

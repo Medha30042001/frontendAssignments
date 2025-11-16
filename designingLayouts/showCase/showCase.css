@@ -1,0 +1,88 @@
+body{
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3{
+    font-weight: 500;
+}
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+
+    border: 1px solid #DCDCDC;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.container:hover{
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5px) scale(1.03);
+}
+.container h3, .container p, .container h4{
+    margin: 5px 0;
+}
+
+#watch{
+    width: 100%;
+    padding: 40px 3px;
+}
+h3+p{
+    color: lightslategray;
+}
+#rating{
+    background-color: #3C903E;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+.reviews, .price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.price h4{
+    font-size: 22px;
+    font-weight: 600;
+}
+#logo{
+    width: 100px;
+}
+.green{
+    color: #3C903E;
+    font-weight: 600;
+}
+.grey{
+    color: dimgrey;
+}
+#strike{
+    text-decoration: line-through;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+button{
+    border: none;
+    padding: 10px 15px;
+    margin: 20px 0;
+    border-radius: 50px;
+}
+
+#cart{
+    background-color: #FFD814;
+}
+#cart:hover{
+    background-color: #FFCE12;
+}
+#buy{
+    background-color: #FFA41C;
+}
+#buy:hover{
+    background-color: #FF8400;
+}

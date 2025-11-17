@@ -1,0 +1,56 @@
+body{
+    padding: 30px;
+    font-family: "open sans", sans-serif;
+    background-color: #FAFAFA;
+}
+.name{
+    font-size: 19px;
+}
+.role{
+    color: dimgray;
+    font-weight: 400;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: stretch;
+    gap: 40px;
+    padding: 20px;
+}
+.founder{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: 10px;
+}
+.logo{
+    max-width: 50%;
+    margin: auto;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    aspect-ratio: 3/4;
+    width: 100%;
+    max-width: 300px;
+
+    padding-bottom: 20px;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.cards:hover{
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5) scale(1.03);
+}
+h4{
+    margin: 0;
+    text-align: center;
+}

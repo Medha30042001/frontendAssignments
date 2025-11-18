@@ -1,0 +1,61 @@
+body{
+    padding: 40px;
+    font-family: 'Bubblegum Sans';
+    color: dimgrey;
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sparkles{
+    width: 250px;
+}
+.schedule{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 40px);
+    gap: 12px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.day, .time, .slot1, .slot2, .note{
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#big{
+    font-size: 25px;
+    font-weight: 600;
+}
+.time{
+    background-color: powderblue;
+    font-size: 25px;
+}
+.slot1{
+    background-color: lightpink;
+    font-size: 20px;
+}
+
+.slot2{
+    background-color: rgb(245, 226, 119);
+    font-size: 20px;
+}
+
+.note{
+    background-color: powderblue;
+    grid-column: 1/-1;
+    text-align: start;
+    display: block;
+    padding-left: 120px;
+    font-size: 25px;
+}

@@ -1,0 +1,31 @@
+
+
+.grids{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 40px auto;
+    width: 80%;
+}
+
+.box{
+    aspect-ratio: 2/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.b2{background-color: crimson;}
+.b3{background-color: dodgerblue;}
+.b4{background-color: goldenrod;}
+.b5{background-color: blueviolet;}
+.b6{background-color: lightgreen;}
+.b1{background-color: deepskyblue;}
+.b7{background-color: chocolate;}
+.b8{background-color: lightseagreen;}
+.b9{background-color: maroon;}
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #FAFAFC;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            width: 90%;
+            max-width: 900px;
+            margin: 140px auto;
+            gap: 40px;
+        }   
+        @media (max-width: 600px){
+            .container{
+                width: 95%;
+                margin: 80px auto;
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (mix-width: 601px) and (max-width: 1024px){
+            .container{
+                width: 95%;
+                margin: 80px auto;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1025px) {
+            .container{
+                width: 95%;
+                margin: 80px auto;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            
+            
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        .item-price{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        p{
+            margin: 0;
+            color: dimgrey;
+        }
+        #price{
+            color: #BE9449;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="item-price"><h3>Cappuccino</h3><h3 id="price">$49</h3></div>
+            <p>Espresso, steamed milk, and milk foam, typically in equal thirds. </p>
+        </div>
+        <div class="card">
+            <div class="item-price"><h3>Americano</h3><h3 id="price">$49</h3></div>
+            <p>Espresso, steamed milk, and milk foam, typically in equal thirds. </p>
+        </div>
+        <div class="card">
+            <div class="item-price"><h3>Espresso</h3><h3 id="price">$49</h3></div>
+            <p>Espresso, steamed milk, and milk foam, typically in equal thirds. </p>
+        </div>
+        <div class="card">
+            <div class="item-price"><h3>Macchiato</h3><h3 id="price">$49</h3></div>
+            <p>Espresso, steamed milk, and milk foam, typically in equal thirds. </p>
+        </div>
+        <div class="card">
+            <div class="item-price"><h3>Mocha</h3><h3 id="price">$49</h3></div>
+            <p>Espresso, steamed milk, and milk foam, typically in equal thirds. </p>
+        </div>
+        <div class="card">
+            <div class="item-price"><h3>Coffee Latte</h3><h3 id="price">$49</h3></div>
+            <p>Espresso, steamed milk, and milk foam, typically in equal thirds. </p>
+        </div>
+        <div class="card">
+            <div class="item-price"><h3>Piccolo Latte</h3><h3 id="price">$49</h3></div>
+            <p>Espresso, steamed milk, and milk foam, typically in equal thirds. </p>
+        </div>
+        <div class="card">
+            <div class="item-price"><h3>Ristretto</h3><h3 id="price">$49</h3></div>
+            <p>Espresso, steamed milk, and milk foam, typically in equal thirds. </p>
+        </div>
+        <div class="card">
+            <div class="item-price"><h3>Affogato</h3><h3 id="price">$49</h3></div>
+            <p>Espresso, steamed milk, and milk foam, typically in equal thirds. </p>
+        </div>
+    </div>
+</body>
+</html>
